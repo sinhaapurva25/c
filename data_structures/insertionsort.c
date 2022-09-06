@@ -1,6 +1,11 @@
 /*
 http://btechsmartclass.com/DS/U4_T4.html
 */
+
+/*
+check the same Python implementation at https://github.com/sinhaapurva25/python/tree/main/Topics-Practiced/insertionsort.py
+*/
+
 //insertion sort
 #include<stdio.h>
 #include<conio.h>
