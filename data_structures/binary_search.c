@@ -26,20 +26,20 @@ int main(void)
 
 while(beg<=end)
 	{
-	 mid=(beg+end)/2;
-	 printf("%d ", mid);
-	 if(x[mid]==num)
-		 {
-			printf("element found at index = %d",mid);
-			flag=1;
-			break;
-		 }
+		mid=(beg+end)/2;
+		printf("%d ", mid);
+		if(x[mid]==num)
+			{
+				printf("element found at index = %d",mid);
+				flag=1;
+				break;
+			}
 
-	 else if(x[mid]<num)
-		beg=mid+1;
+		else if(x[mid]<num)
+			beg=mid+1;
 
-	 else
-		end=mid-1;
+		else
+			end=mid-1;
 
 	}
 if(flag==0)

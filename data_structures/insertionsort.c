@@ -6,34 +6,40 @@ http://btechsmartclass.com/DS/U4_T4.html
 #include<conio.h>
 int main(void)
 {
-int n,a[20],i,j,min;
-printf("enter n ");
-scanf("%d",&n);
+	int n,a[20],step,j,min;
+	printf("enter n ");
+	scanf("%d",&n);
 
-   printf("enter the array:\n");
-for(i=0;i<n;i++)
-	{
-	scanf("%d",&a[i]);
-	}
+	printf("enter the array:\n");
+	for(step=0;step<n;step++)
+		{
+			scanf("%d",&a[step]);
+		}
+	for(step=1;step<n;step++)
+		{
+			min=a[step];
+			j=step-1;
 
-for(i=0;i<n;i++)
-	{
-    	min=a[i];
-      j=i-1;
-      while((min<a[j]) && (j>=0))
-      	{
-         	a[j+1]=a[j];
-            j--;
-         }
-   	a[j+1]=min;
-	}
+			while((min<a[j]) && (j>=0))
+				{
+					a[j+1]=a[j];
+					j--;
+					
+					// int substep;
+					// for(substep=0;substep<n;substep++)
+					// {
+					// 	printf("%d ",a[substep]);
+					// }
+				printf("\t");
+				}
+			a[j+1]=min;
+			printf("\n");
+		}
 
-   printf("sorted array: ");
-for(i=0;i<n;i++)
-	{
-	printf("%d ",a[i]);
-	}
-
-// getch();
-   return 1;
+	printf("sorted array: ");
+	for(step=0;step<n;step++)
+		{
+			printf("%d ",a[step]);
+		}
+	return 0;
 }

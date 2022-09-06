@@ -12,6 +12,7 @@ int main()
 		if(choice==4)
 		{
 			//break; // out of the loop
+			//The exit(0) function determines the program terminates without any error message, and then the exit(1) function determines the program forcefully terminates the execution process.
 			exit(0); //out of the program
 		}
 	}

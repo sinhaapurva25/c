@@ -37,7 +37,7 @@ int main()
 					deque();
 					break;
 			case 3:
-					Disp();
+					disp();
 					break;
 			case 4:
 					exit(0);
@@ -83,7 +83,7 @@ void deque()
     }
 }
 
-void Disp()
+void disp()
 {
 
 if(f==NULL)
