@@ -14,7 +14,7 @@ if(x<0)
 return;
 else
 {
-	printf("hello ");
+	printf(x);
 	show(x-1);
 }
 }
